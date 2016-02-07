@@ -33,9 +33,11 @@ public class RockPaperScissors {
      * @return 
      */
     public int comparesChoices(Choice player1Choice, Choice player2Choice){
+        // Tie
         if(player1Choice == player2Choice)
             return 0;
         
+        // Define rules for winning
         switch(player1Choice){
             case ROCK:
                 return (player2Choice == Choice.SCISSORS ? 1 : -1);
