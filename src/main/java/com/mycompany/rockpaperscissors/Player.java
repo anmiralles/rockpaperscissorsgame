@@ -5,17 +5,31 @@
  */
 package com.mycompany.rockpaperscissors;
 
+import java.util.Random;
+
 /**
  *
  * @author angelmiralles
  */
 public class Player {
 
+    /**
+     * Method for player random choice
+     * @return 
+     */
     public Choice getRandomChoice(){
-        return null;
-    }
+        Choice[] choices = Choice.values();
+        Random randomChoice = new Random();
+        int index = randomChoice.nextInt(choices.length);
+        return choices[index];
+     }
     
+    /**
+     * Method for player selected choice
+     * @param selectedChoice
+     * @return 
+     */
     public Choice getSelectedChoice(Choice selectedChoice){
-        return null;
+        return selectedChoice;
     }
 }
