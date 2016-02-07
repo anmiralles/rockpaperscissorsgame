@@ -26,7 +26,7 @@ public class PlayerTest {
         Player player = new Player();
         Choice expResult = null;
         Choice result = player.getRandomChoice();
-        
+ 
         switch(result){
             case ROCK:
                 expResult = Choice.ROCK;
