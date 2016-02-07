@@ -22,6 +22,26 @@ public class PlayerTest {
      */
     @Test
     public void testGetRandomChoice() {
+        System.out.println("Test for getRandomChoice.");
+        Player player = new Player();
+        Choice expResult = null;
+        Choice result = player.getRandomChoice();
+        
+        switch(result){
+            case ROCK:
+                expResult = Choice.ROCK;
+                assertEquals(expResult, result);
+                break;
+            case PAPER:
+                expResult = Choice.PAPER;
+                assertEquals(expResult, result);
+                break;
+            case SCISSORS:
+                expResult = Choice.SCISSORS;
+                assertEquals(expResult, result);
+                break;
+        }
+        
     }
 
     /**
@@ -29,6 +49,11 @@ public class PlayerTest {
      */
     @Test
     public void testGetSelectedChoice() {
+        System.out.println("Test for getSelectedChoice");
+        Player player = new Player();
+        Choice expResult = Choice.ROCK;
+        Choice result = player.getSelectedChoice(Choice.ROCK);
+        assertEquals(expResult, result);
     }
     
 }
