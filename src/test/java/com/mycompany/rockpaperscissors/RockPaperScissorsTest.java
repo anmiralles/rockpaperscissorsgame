@@ -56,7 +56,7 @@ public class RockPaperScissorsTest {
     }
 
     /**
-     * Test of main method, of class RockPaperScissors.
+     * Test of main method of class RockPaperScissors.
      */
     @Test
     public void testMain() {
